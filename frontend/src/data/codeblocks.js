@@ -1,0 +1,3 @@
+export const codeblock1 = `#include <algorithm>;\n#include <iostream>;\nusing namespace std;\n\nint main() {\n\tint arr[] = {5, 2, 9, 1, 5, 6};\n\tsort(arr, arr + 6);\n\tfor(int i=0; i<6; ++i) {\n\t\tcout << arr[i] << " ";\n\t}\n\treturn 0;\n}`;
+
+export const codeblock2 = `const graph = { 1:[2,3], 2:[4,5], 3:[6], 4:[] };\n\nfunction dfs(node, visited = new Set()) {\n\tif (visited.has(node)) return;\n\tconsole.log(node);\n\tvisited.add(node);\n\tgraph[node].forEach(n => dfs(n, visited));\n}\n\ndfs(1);`;
